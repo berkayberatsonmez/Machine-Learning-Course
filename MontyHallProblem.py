@@ -9,7 +9,7 @@ i = 0
 
 while i <= 1000 * 1000:
 
-    #We don't change the door here..
+    #We don't change the door here.
     car_door = random.randrange(0,3) #We decide which door the car is at.
     competitor_door = random.randrange(0,3) #We decide which door the competitor chooses.
     if competitor_door == car_door:  #We look at the competitor wins or not.
@@ -18,7 +18,7 @@ while i <= 1000 * 1000:
     else:
         count +=1
         
-    #We change the door here..
+    #We change the door here.
     opened_door = next(j for j in range(3) if j != competitor_door and j != car_door) #We create an iterator for the for the opened the door.
     changed_door =  next(j for j in range(3) if j != opened_door and j != competitor_door) #We create an iterator for the for the change the door.
     if changed_door == car_door: #We look at the competitor wins or not.
