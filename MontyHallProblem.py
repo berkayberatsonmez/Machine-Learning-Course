@@ -7,7 +7,7 @@ win2 = 0 #List of how many times we've won with the door change.
 count2 = 0 #List of how many times we've played with the door change.
 i = 0
 
-while i <= 1000 * 1000:
+while i <= 1000000:
 
     #We don't change the door here.
     car_door = random.randrange(0,3) #We decide which door the car is at.
