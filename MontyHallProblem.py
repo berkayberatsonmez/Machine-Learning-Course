@@ -7,7 +7,7 @@ win2 = 0 #List of how many times we've won with the door change.
 count2 = 0 #List of how many times we've played with the door change.
 i = 0
 
-while i <= 1000000:
+while i <= 100000:
 
     #We don't change the door here.
     car_door = random.randrange(0,3) #We decide which door the car is at.
@@ -29,5 +29,5 @@ while i <= 1000000:
     i += 1
 
 #To find the probability of winning, we divide the length of the list of how many times we've won by the length of the list of how many times we've played.
-print("The probability of winning if the door is not changed:", win / count) 
-print("The probability of winning if the door is changed: ", win2 / count2)
+print(f"The probability of winning if the door is not changed: {win / count}") 
+print(f"The probability of winning if the door is changed: {win2 / count2}")
