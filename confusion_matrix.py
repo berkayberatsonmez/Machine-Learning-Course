@@ -95,7 +95,7 @@ import statsmodels.api as sm
 
 X = data.iloc[:,:-1].values
 X = np.array(X,dtype=float)
-model = sm.OLS(data.iloc[:,-1:],X_l).fit()
+model = sm.OLS(data.iloc[:,-1:],X).fit()
 print(model.summary()) #Rapor
 
 data.drop('texture_mean', inplace=True, axis=1)
@@ -110,7 +110,7 @@ data.drop('smoothness_se', inplace=True, axis=1)
 
 X = data.iloc[:,:-1].values
 X = np.array(X,dtype=float)
-model = sm.OLS(data.iloc[:,-1:],X_l).fit()
+model = sm.OLS(data.iloc[:,-1:],X).fit()
 print(model.summary()) #Rapor
 
 
