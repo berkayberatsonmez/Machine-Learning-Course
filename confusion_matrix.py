@@ -90,7 +90,7 @@ plt.show()
 
 
 
-#Backward Elimination
+#Geri Eleme(Backward Elimination)
 import statsmodels.api as sm
 
 X = data.iloc[:,:-1].values
