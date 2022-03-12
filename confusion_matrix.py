@@ -2,7 +2,7 @@
 """
 Created on Sat Mar 12 07:19:33 2022
 
-@author: berka
+@author: berkayberatsonmez
 """
 
 # KNN Algorithm
