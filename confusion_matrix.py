@@ -30,7 +30,7 @@ data.isnull().sum() #Any value is null?
 
 data.describe() #Analyzes data
 
-data.corr() #Compute pairwise correlation of columns, excluding NA/null values.
+data.corr() #The relationship between the data themselves
 
 # %%
 M = data[data.diagnosis == "M"]
