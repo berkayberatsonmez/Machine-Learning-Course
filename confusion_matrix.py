@@ -17,7 +17,24 @@ data.drop(["id","Unnamed: 32"],axis=1,inplace=True)
 data.tail()
 # malignant = M  kotu huylu tumor
 # benign = B     iyi huylu tumor
+
+
+
 data.shape
+
+data.head()
+
+data.columns
+
+data.info()
+
+data.isnull().sum()
+
+data.describe()
+
+data["class"].value_counts()
+
+data.corr()
 
 # %%
 M = data[data.diagnosis == "M"]
