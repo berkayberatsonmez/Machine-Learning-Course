@@ -18,23 +18,19 @@ data.tail()
 # malignant = M  kotu huylu tumor
 # benign = B     iyi huylu tumor
 
+data.shape #(569,31)
 
+data.head() #Data columns name and first 5 value
 
-data.shape
+data.columns #Data columns name
 
-data.head()
+data.info() #Data information
 
-data.columns
+data.isnull().sum() #Any value is null?
 
-data.info()
+data.describe() #Analyzes data
 
-data.isnull().sum()
-
-data.describe()
-
-data["class"].value_counts()
-
-data.corr()
+data.corr() #Compute pairwise correlation of columns, excluding NA/null values.
 
 # %%
 M = data[data.diagnosis == "M"]
