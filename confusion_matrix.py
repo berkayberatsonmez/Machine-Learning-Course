@@ -72,12 +72,12 @@ print(" {} nn score: {} ".format(3,knn.score(x_test,y_test)))
 # %%
 # find k value
 score_list = []
-for each in range(1,15):
+for each in range(1,50):
     knn2 = KNeighborsClassifier(n_neighbors = each)
     knn2.fit(x_train,y_train)
     score_list.append(knn2.score(x_test,y_test))
     
-plt.plot(range(1,15),score_list)
+plt.plot(range(1,50),score_list)
 plt.xlabel("k values")
 plt.ylabel("accuracy")
 plt.show()
