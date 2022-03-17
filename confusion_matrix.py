@@ -63,7 +63,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size = 0.4,random_s
 # %%
 # knn model
 from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier(n_neighbors = 3) # n_neighbors = k
+knn = KNeighborsClassifier(n_neighbors = 5, metric='minkowski') # n_neighbors = k
 knn.fit(x_train,y_train)
 prediction = knn.predict(x_test)
 print(" {} nn score: {} ".format(3,knn.score(x_test,y_test)))
