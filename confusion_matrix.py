@@ -73,7 +73,7 @@ print(" {} nn score: {} ".format(3,knn.score(x_test,y_test)))
 # find k value
 score_list = []
 for each in range(1,50):
-    knn2 = KNeighborsClassifier(n_neighbors = 5, metric='minkowski')
+    knn2 = KNeighborsClassifier(n_neighbors = each, metric='minkowski')
     knn2.fit(x_train,y_train)
     score_list.append(knn2.score(x_test,y_test))
     
